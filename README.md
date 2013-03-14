@@ -3,12 +3,31 @@ PhotoSwipe Fullscreen Demo
 
 This is a fork of [PhotoSwipe](http://www.photoswipe.com) the awesome peice of JavaScript that helps display photos on small screens as well as large ones.
 
-I made this demo after seeing [this issue](https://github.com/codecomputerlove/PhotoSwipe/issues/51). As I wanted to do the same thing, I thought that it would be helpful have a demo. Also, I wanted a place to archive this code. The original README follows...
+This demo is all client side. I used this for a while on my own photography site, please update the images with your own.
+
+The small changes that were made that photographers might like:
+-----
+- Appends a counter to the image gallery
+- Loads PhotoSwipe right away without showing the thumbnails (no need for thumbnails)
+- Option to add a heading to the gallery
+
+[View the demo!](http://jonathanbell.github.com/PhotoSwipe/)
+
+Make it work on your site:
+---
+- Download the git repo (by clicking the zip button above for example)
+- Number your image files 001 through 999 and place them in the 'images' folder, replacing the existing 4 jpg's.
+- Change the value of the NumberOfImages (at the top of main.js) to how ever many photos you have
+- Adjust the var options object if you want to in order to suite your needs. <a href="#options">See options below</a>.
+
+I made this demo after seeing [this issue](https://github.com/codecomputerlove/PhotoSwipe/issues/51) and [this issue](https://github.com/codecomputerlove/PhotoSwipe/issues/259). As I wanted to do the same thing, I thought that it would be helpful have a demo. Also, I wanted a place to archive this code.
+
+The original README.md follows hereafter...
 
 
 
 PhotoSwipe - The web image gallery for your mobile device
----------------------------------------------------------
+=========================================================
 
 web: [www.photoswipe.com](http://www.photoswipe.com), [www.codecomputerlove.com](http://www.codecomputerlove.com)
 

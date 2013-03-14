@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>PhotoSwipe Fullsreen Demo</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+        <link rel="dns-prefetch" href="https://s3.amazonaws.com" />
+
+        <script>
+            // http://www.learningjquery.com/2008/10/1-way-to-avoid-the-flash-of-unstyled-content
+            document.documentElement.className = 'js';
+        </script>
+
+        <link rel="stylesheet" href="css/photoswipe.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/klass.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/code.photoswipe.jquery-3.0.5.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+
+    <body>
+
+        <noscript>
+            <h1 style="background: rgba(0,0,0,0.5); padding-left: 30px; color: white; text-transform: uppercase; font-size: 241%;">PhotoSwipe Fullscreen Demo</h1>
+            <p style="margin-top: 0; display: block; padding: 3em 3em 3em 30px; color: white; text-transform: uppercase; background: rgba(0,0,0,0.5);">Hi, thanks for coming! You need <a style="color: pink;" target="_blank" href="http://enable-javascript.com/">JavaScript enabled</a> in order to view this demo. <br /><br /> Have a nice day!</p>
+        </noscript>
+
+        <script>
+            // http://24ways.org/2011/raising-the-bar-on-mobile/
+            if( window.addEventListener ){
+                window.addEventListener("load",function() {
+                    setTimeout(function(){
+                        window.scrollTo(0, 0);
+                    }, 0);
+                });
+            }
+        </script>
+
+    </body>
+
+    <!-- ahoy matey! -->
+
+</html>

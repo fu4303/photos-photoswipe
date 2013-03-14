@@ -1,0 +1,42 @@
+/* reccomended gallery CSS from photoswipe */
+body { padding: 0; margin: 0; background: #DFDCD1; font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif; color: #444340; }
+body { min-height: 480px; } /* for safari ios scrolly thing: http://stackoverflow.com/questions/7890003/how-to-remove-address-bar-in-safari-in-ios5 */
+h1 { font-size: 1.3em; padding: 15px 10px; margin: 0; }
+h2 { font-size: 1.1em; padding: 10px; margin: 0; }
+img { border: none; }
+a { color: #444340; }
+
+#Header { background: #EEBF02; height: 61px; padding: 0; border-bottom: 1px solid #3c3c3c;  }
+#Header img { display: block; margin: 0 auto 0; }
+
+#MainContent { background: #ffffff; padding-bottom: 30px; }
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 33.33333333%; }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: auto; }
+
+/* demo css */
+.js .mainHeading {
+    color: #666;
+    float: right;
+    text-transform: uppercase;
+    font-family: palatino, georgia, serif;
+    font-weight: normal;
+}
+
+/* show a counter, top right */
+.counter {
+    position: absolute;
+    z-index: 333;
+    display: inline-table !important;
+    font-size: 66.666%;
+    color: white;
+    background: black;
+    padding: 1px;
+    opacity: 0.8;
+}
+    .counter * {
+        display: table !important;
+    }
