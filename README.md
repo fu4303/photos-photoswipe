@@ -1,5 +1,14 @@
+PhotoSwipe Fullscreen Demo
+==========================
+
+This is a fork of [PhotoSwipe](http://www.photoswipe.com) the awesome peice of JavaScript that helps display photos on small screens as well as large ones.
+
+I made this demo after seeing [this issue](https://github.com/codecomputerlove/PhotoSwipe/issues/51). As I wanted to do the same thing, I thought that it would be helpful have a demo. Also, I wanted a place to archive this code. The original README follows...
+
+
+
 PhotoSwipe - The web image gallery for your mobile device
-=========================================================
+---------------------------------------------------------
 
 web: [www.photoswipe.com](http://www.photoswipe.com), [www.codecomputerlove.com](http://www.codecomputerlove.com)
 
@@ -17,33 +26,6 @@ Have you used PhotoSwipe? It'd be great to hear from you!
 ---------------------------------------------------------
 
 It'd be fantastic to see how you have implemented PhotoSwipe on your site! We're looking at showcasing some of the best on [photoswipe.com](http://www.photoswipe.com). Feel free to drop us a tweet at [@photoswipe](http://twitter.com/#!/photoswipe) and tell us all about it!
-
-
-
-Latest Release v3.0.5
----------------------
-[Download](http://github.com/downloads/codecomputerlove/PhotoSwipe/code.photoswipe-3.0.5.zip)
-
-- Fixed user agent string issues with Firefox for Android
-- Fixed iOS5 black screen issue when using pinch to zoom
-
-**Changes for v3**
-
-- You can now specify a target for PhotoSwipe. It doesn't have to run in full screen anymore! To do this, you specify a "target" as part of PhotoSwipe settings. The target MUST be a valid DOM element for it to work. See examples "12-custom-target.html", "13-custom-target-with-indicators.html" for more details.
-
-- Multi-line captions when caption bar placed at the bottom should now be fixed.
-
-- Fixed issue where toolbar and caption remained visible when zooming in and captionAndToolbarAutoHideDelay = 0.
-
-- Upgraded to jQuery Mobile 1.0 RC2
-
-- Upgraded Code.Util to 1.0.6
-
-- Work around for issue #141 now officially added - when rotating an app with PhotoSwipe displayed in a UIWebView, PhotoSwipe does not rotate. This seems to be an issue with UIWebView not PhotoSwipe. To enable this work around, set "enableUIWebViewRepositionTimeout = true" when creating your PhotoSwipe instance. You can also specify the frequency of this timeout by setting "uiWebViewResetPositionDelay" (default 500ms) - **Please Note** This is not needed for PhoneGap apps, nor web apps added to your homescreen.
-
-**Important notes about the examples and Internet Explorer**
-
-The majority of the bundled examples supplied with PhotoSwipe are running the optimised non-jQuery version. These examples will error on Internet Explorer. This is by design. They will work if you use the jQuery version of PhotoSwipe. Please read the "Getting Started" section below for more information regarding the different implementations of PhotoSwipe.
 
 
 
@@ -81,7 +63,7 @@ Features
     - Presentation controlled via CSS
 
     - Set whether the gallery loops or not i.e. when you reach the end, is the next image the first image, or does the gallery show a bounce effect to indicate that you have reached the end.
-  
+
     - Hide or show captions and toolbar
 
     - Change caption and toolbar positions
@@ -95,32 +77,32 @@ Features
 Getting Started
 ---------------
 
-PhotoSwipe comes with an example site to help you get started. 
+PhotoSwipe comes with an example site to help you get started.
 
 There are two distributions of the library:
 
 - The default distribution optimised for WebKit and Mozilla based browsers. This distribution uses standard DOM querying and manipulation. It also uses CSS3 transformations for animations.
 
-- The jQuery distribution that uses jQuery as it's engine. 
+- The jQuery distribution that uses jQuery as it's engine.
 
 It is recommended for WebKit based mobile devices to use the default distribution. This negates a lot of the overhead from using jQuery. It does not require jQuery (so one less library to download to your mobile device!). The default distribution will also work on desktop WebKit browsers (such as Chrome and Safari) as well as Firefox 4 and above.
 
-Use the jQuery distibution if you need to support a wider range of browsers such as Internet Explorer etc. 
+Use the jQuery distibution if you need to support a wider range of browsers such as Internet Explorer etc.
 
 
 
 Getting Started - Default Distribution
 --------------------------------------
 
-See "examples/01-default.html". 
+See "examples/01-default.html".
 
 This example assumes no jQuery at all and is heavily optimised for WebKit and Mozilla browsers. PhotoSwipe.attach takes three parameters, an array of HTML elements, optional options and optional instance ID string.
 
-	// Set up PhotoSwipe with all anchor tags in the Gallery container 
+	// Set up PhotoSwipe with all anchor tags in the Gallery container
 	document.addEventListener('DOMContentLoaded', function(){
-		
+
 		var myPhotoSwipe = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
-		
+
 	}, false);
 
 
@@ -133,11 +115,11 @@ Getting Started - Default Distribution (with jQuery engine)
 
 See "examples/02-jquery.html". The plugin takes two parameters both of which optional; an options objectand an instance ID string.
 
-	// Set up PhotoSwipe with all anchor tags in the Gallery container 
+	// Set up PhotoSwipe with all anchor tags in the Gallery container
 	$(document).ready(function(){
-		
+
 		var myPhotoSwipe = $("#Gallery a").photoSwipe({ enableMouseWheel: false , enableKeyboard: false });
-		
+
 	});
 
 
@@ -145,7 +127,7 @@ See "examples/02-jquery.html". The plugin takes two parameters both of which opt
 Options
 -------
 
-- **allowUserZoom**: Allow the user to zoom / pan around images. Default = true 
+- **allowUserZoom**: Allow the user to zoom / pan around images. Default = true
 
 - **autoStartSlideshow**: Automatically starts the slideshow mode when PhotoSwipe is activated. Default = false
 
@@ -236,15 +218,15 @@ You can provide your own functions to tell PhotoSwipe how to work with your mark
 
 
 		document.addEventListener('DOMContentLoaded', function(){
-		
+
 			var myPhotoSwipe = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), {
-			
-				getImageSource: function(el){ 
-					return el.getAttribute('rel'); 
+
+				getImageSource: function(el){
+					return el.getAttribute('rel');
 				}
-				
+
 			} );
-		
+
 		}, false);
 
 
@@ -254,11 +236,11 @@ You can provide your own functions to tell PhotoSwipe how to work with your mark
 - **getImageMetaData**: Function to associated additional meta data against an image in the gallery. This meta data can then be used in your own code if you listen to the "onDisplayImage" event.
 
 		getImageMetaData: function(el){
-				
+
 			return {
 				longDescription: el.getAttribute(el, 'data-long-description')
 			}
-			
+
 		}
 
 
