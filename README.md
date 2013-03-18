@@ -1,7 +1,7 @@
 PhotoSwipe Fullscreen Demo
 ==========================
 
-This is a fork of [PhotoSwipe](http://www.photoswipe.com) the awesome peice of JavaScript that helps display photos on small screens as well as large ones.
+This is a fork of [PhotoSwipe](http://www.photoswipe.com), the awesome peice of JavaScript that helps display photos on small screens as well as large ones.
 
 This demo is all client side. I used this for a while on my own photography site, please update the images with your own.
 
