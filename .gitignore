@@ -1,4 +1,6 @@
 release/*
 /release
 .DS_Store
+github.php
+
 
