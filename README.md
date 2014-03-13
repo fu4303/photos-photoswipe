@@ -11,7 +11,7 @@ The small changes that were made that photographers might like:
 - Loads PhotoSwipe right away without showing the thumbnails (no need for thumbnails)
 - Option to add a heading to the gallery
 
-[View the demo!](http://demos.jonathanbell.ca/PhotoSwipe/)
+[View the demo!](http://demos.jonathanbell.ca/photoswipe/)
 
 Make it work on your site:
 ---
