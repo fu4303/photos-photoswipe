@@ -19,12 +19,14 @@ a { color: #444340; }
 
 /* demo css */
 body { background: black; font-family: sans-serif; color: white; }
-.js .mainHeading {
-    color: #666;
-    float: right;
-    text-transform: uppercase;
-    font-family: palatino, georgia, serif;
-    font-weight: normal;
+
+.js #main-heading {
+  z-index: 201;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: black;
+  display: block;
 }
 
 /* show a counter, top right */

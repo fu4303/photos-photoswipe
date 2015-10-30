@@ -3,7 +3,7 @@
 
 $('html, body').css('background', 'black');
 
-// CHANGE THESE VALUES TO SUITE YOUR OWN PLEASE!!! :)
+// CHANGE THESE VALUES TO SUITE YOUR OWN SITE
 var numberOfImages = 4,
     pathToImages = 'images/',
     counter = true;
@@ -45,7 +45,7 @@ var numberOfImages = 4,
                 preventSlideshow: true,
                 zIndex: '101',
                 imageScaleMethod: 'zoom',
-                captionAndToolbarAutoHideDelay: 3345,
+                captionAndToolbarAutoHideDelay: 3333,
                 getImageSource: function (obj) {
                     return obj.url;
                 },
@@ -59,14 +59,11 @@ var numberOfImages = 4,
         // append a neato counter to the image gallery
         if (counter) {
             $(document).ready(function() {
-                if ($(window).width() >= 1024) {
-                    $('body').prepend('<div class="counter">1/' + daPicturz.length + '</div>');
-                }
+                $('body').prepend('<div class="counter">1/' + daPicturz.length + '</div>');
             });
         }
 
-        instance.addEventHandler(PhotoSwipe.EventTypes.onDisplayImage, function(e){
-            // console.log(e.index + 1); // current gallery item index value
+        instance.addEventHandler(PhotoSwipe.EventTypes.onDisplayImage, function(e) {
             $('.counter').html(e.index + 1 + '/' + daPicturz.length);
         });
 
@@ -80,7 +77,5 @@ $(window).load(function () {
     // if we have a desktop sized screen add in some instructions for the user
     if ($(window).width() >= 1024) {
         $('.ps-toolbar-content').attr('title', 'Use the keyboard arrow keys as well!');
-        // $('.ps-toolbar').append('<h1 class="mainHeading">The Main Heading of this Gallery</h1>');
-        // $('.ps-toolbar').prepend('<h1 style="text-transform: none; float: left;" class="mainHeading">Another Hack...</h1>');
     }
 });
