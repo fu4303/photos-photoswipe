@@ -20,12 +20,16 @@ a { color: #444340; }
 /* demo css */
 body { background: black; font-family: sans-serif; color: white; }
 
-.js #main-heading {
-  z-index: 201;
+.js #showme {
   position: absolute;
   top: 30px;
-  left: 0;
   background: black;
+  min-height: 50px;
+  z-index: 201;
+  display: block;
+  min-width: auto;
+}
+.js #showme * {
   display: block;
 }
 
