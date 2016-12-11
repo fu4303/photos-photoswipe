@@ -1,12 +1,10 @@
-// Yo, mad shout outs to PhotoSwipe! https://github.com/codecomputerlove/PhotoSwipe
-// Thanks for making this great product!!! :) Love ya.
-
 $('html, body').css('background', 'black');
 
 // CHANGE THESE VALUES TO SUITE YOUR OWN SITE
 var numberOfImages = 4,
     pathToImages = 'images/',
     counter = true;
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 (function (window, PhotoSwipe) {
 
