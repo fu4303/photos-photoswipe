@@ -17,7 +17,7 @@ Install This Demo On Your Own Site:
 -----------------------------------
 - Download or fork this repo
 - Number your image files as such: '001.jpg', '002.jpg', '003.jpg' through '999.jpg' and place them in the '/images' folder, replacing the existing 4 jpg's.
-- Change the value of the NumberOfImages (at the top of main.js, ~line 7) to how ever many photos you have.
+- Change the value of the NumberOfImages (at the top of main.js, ~line 4) to how ever many photos you have.
 - Optionally, adjust [the {options} object](http://photoswipe.com/documentation/options.html) if you want to.
 
 TLDR;
