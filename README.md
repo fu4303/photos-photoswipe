@@ -11,7 +11,7 @@ Changes that I made:
 - Loads PhotoSwipe right away without showing the thumbnails (we have no need for thumbnails)
 - Adds a heading to the gallery that shows and hides with user mouse clicks/taps/timeout
 
-[View the demo](http://jonathanbell.github.io/fullscreen-photoswipe-demo/)
+[View the demo](http://jonathanbell.github.io/fullscreen-photoswipe/)
 
 Install This Demo On Your Own Site:
 -----------------------------------
