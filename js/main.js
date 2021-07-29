@@ -16,19 +16,19 @@ var numberOfImages = 4,
 
             if (i < 10) { // just dealing with some zero padding and file naming issues.
                 daPicturz.push({
-                    url: pathToImages + '00' + i + '.jpeg',
+                    url: pathToImages + '00' + i + '.jpg',
                     caption: ''
                 });
             }
             else if (i > 9 && i < 100) {
                 daPicturz.push({
-                    url: pathToImages + '0' + i + '.jpeg',
+                    url: pathToImages + '0' + i + '.jpg',
                     caption: ''
                 });
             }
             else if (i > 99) {
                 daPicturz.push({
-                    url: pathToImages + i + '.jpeg',
+                    url: pathToImages + i + '.jpg',
                     caption: ''
                 });
             }
